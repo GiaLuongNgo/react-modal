@@ -1,0 +1,98 @@
+.comment {
+  display: flex;
+  align-items: flex-start;
+  padding: 12px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  gap: 12px;
+  background: #fff;
+
+  &__checkbox {
+    margin-top: 30px;
+    width: 16px;
+    height: 16px;
+  }
+
+  &__image {
+    width: 60px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  &__content {
+    flex: 1;
+  }
+
+  &__filename {
+    font-weight: 500;
+    margin-bottom: 4px;
+    color: #333;
+  }
+  
+  &__type-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__type {
+    background: #f0f0f0;
+    padding: 6px 12px;
+    display: inline-block;
+    font-size: 14px;
+    color: #1c1c1c;
+    border-radius: 4px 4px 0 0;
+
+  }
+
+  &__text {
+    color: #333;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 8px 12px;
+    background: #f9f9f9;
+    border-radius: 0 0 4px 4px;
+    border: 1px solid #eee;
+  }
+
+  &__text-input {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1.5;
+    resize: none;
+    min-height: 60px;
+    
+    &:focus {
+      outline: none;
+      border-color: #2196f3;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    gap: 4px;
+  }
+
+  &__action-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 4px;
+    color: #666;
+    transition: all 0.2s ease;
+    
+    &:hover {
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+} 
